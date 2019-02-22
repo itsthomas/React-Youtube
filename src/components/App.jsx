@@ -77,7 +77,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("Error From state: ", this.state.error);
     return (
       <div className="App">
         <Alert passApiKey={this.onFormSubmit} />

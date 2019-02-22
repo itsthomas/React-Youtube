@@ -6,8 +6,7 @@ import SweetAlert from "react-bootstrap-sweetalert";
 
 class Alert extends Component {
   state = {
-    alert: null, // initialising an empty alert
-    api_key: ""
+    alert: null // initialising an empty alert
   };
 
   // Defining first alert
@@ -28,6 +27,7 @@ class Alert extends Component {
         For this site to work, you need an API Key
       </SweetAlert>
     );
+
     this.setState({
       alert: getAlert()
     });
@@ -36,8 +36,7 @@ class Alert extends Component {
   addAPIKey(e) {
     // console.log(e);
     this.setState({
-      alert: null, // This will colse the dialog window
-      api_key: e
+      alert: null // This will colse the dialog window
     });
 
     // console.log(`Am I here: `, e);
