@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     videos: [],
     selectedVideo: null,
-    api_key: "",
+    api_key: null,
     error: null
   };
 
