@@ -1,0 +1,76 @@
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* ==========================================
+               Global Styling
+========================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #cee5f2 !important;
+}
+
+.App {
+  width: 80vw;
+  margin: 14px auto;
+
+  h3 {
+    color: #c30909;
+  }
+
+  .item-container {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+
+    .title {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+  .iframe-container {
+    // overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-bottom: 10px;
+
+    iframe {
+      // left: 0;
+      // top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .description {
+    border: 1px solid #ccc;
+    padding: 12px;
+  }
+}
