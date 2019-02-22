@@ -88,7 +88,10 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-8">
-              <VideoDetail video={this.state.selectedVideo} />
+              <VideoDetail
+                video={this.state.selectedVideo}
+                error={this.state.error}
+              />
             </div>
             <div className="col-lg-2 col-4">
               <VideoList
