@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Get your API KEY
 
-For this app to work, you need an Youtube API-Key.
+For this app to work, you need a Youtube API-Key.
 To get your API KEY go to: https://console.developers.google.com/
 
 ## Add .env file

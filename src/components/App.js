@@ -3,15 +3,16 @@ import axios from "axios";
 import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
 import VideoDetail from "./VidoeDetail";
-import "./App.scss";
+import ErrorPage from "./ErrorPage";
 import Alert from "./Alert";
+import "./App.scss";
 
 class App extends Component {
   state = {
     videos: [],
     selectedVideo: null,
     api_key: "",
-    error: ""
+    error: null
   };
 
   onFormSubmit = async (api_key, inputValue) => {
@@ -88,10 +89,11 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-8">
-              <VideoDetail
-                video={this.state.selectedVideo}
-                error={this.state.error}
-              />
+              {this.state.error ? (
+                <ErrorPage error={this.state.error} />
+              ) : (
+                <VideoDetail video={this.state.selectedVideo} />
+              )}
             </div>
             <div className="col-lg-2 col-4">
               <VideoList
