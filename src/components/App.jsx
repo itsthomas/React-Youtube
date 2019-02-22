@@ -77,6 +77,7 @@ class App extends Component {
   };
 
   render() {
+    console.log("Error From state: ", this.state.error);
     return (
       <div className="App">
         <Alert passApiKey={this.onFormSubmit} />
@@ -90,7 +91,7 @@ class App extends Component {
           <div className="row">
             <div className="col-lg-10 col-8">
               {this.state.error ? (
-                <ErrorPage error={this.state.error} />
+                <ErrorPage error={this.state.error.message} />
               ) : (
                 <VideoDetail video={this.state.selectedVideo} />
               )}

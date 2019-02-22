@@ -3,6 +3,7 @@ import React from "react";
 const VideoDetail = props => {
   console.log("Props ", props);
 
+  // Preventing something from Rendering
   if (!props.video) {
     return null;
   }
