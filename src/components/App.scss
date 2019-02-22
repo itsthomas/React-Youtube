@@ -44,8 +44,9 @@ body {
     border: 1px solid #ccc;
 
     .title {
-      padding: 10px;
       font-size: 0.8rem;
+      background-color: #fff;
+      padding: 10px;
     }
   }
 
@@ -61,8 +62,6 @@ body {
     margin-bottom: 10px;
 
     iframe {
-      // left: 0;
-      // top: 0;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -70,7 +69,8 @@ body {
   }
 
   .description {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    background-color: #fff;
     padding: 12px;
   }
 
