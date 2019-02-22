@@ -4,7 +4,8 @@ const VideoDetail = props => {
   if (!props.video) {
     return (
       <div className="erro">
-        It seems that your API-Key is not valid. Please try again.
+        It seems that your API-Key is not valid. Please reload the page and try
+        again with a valid Youtube API-Key.
       </div>
     );
   }
