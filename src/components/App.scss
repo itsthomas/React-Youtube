@@ -74,6 +74,15 @@ body {
     padding: 12px;
   }
 
+  .sweetalert {
+    h2 {
+      font-size: 1.6rem;
+    }
+    .text-muted {
+      margin: 18px 0 10px;
+    }
+  }
+
   .error {
     color: red;
   }

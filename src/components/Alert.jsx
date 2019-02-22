@@ -19,12 +19,13 @@ class Alert extends Component {
         confirmBtnText="Confirm"
         confirmBtnBsStyle="warning"
         cancelBtnBsStyle="info"
-        placeHolder="Type your API Key"
+        placeholder="Type your API Key"
+        customClass="sweetalert"
         title="Please add your YouTube API-Key"
         onConfirm={e => this.addAPIKey(e)}
         onCancel={() => this.closeAlert()}
       >
-        For this site to work, you need a YouTube API Key
+        For this site to work, you need an API Key
       </SweetAlert>
     );
     this.setState({
