@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoDetail = props => {
   if (!props.video) {
-    return <div>Loading...</div>;
+    return <div className="erro">It seems that your API-Key is not valid</div>;
   }
 
   return (

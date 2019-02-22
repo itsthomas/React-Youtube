@@ -21,7 +21,7 @@ class App extends Component {
         : api_key;
 
       // For the first ApI request, use tiger as search word
-      // inputValue = inputValue ? inputValue : "tiger";
+      inputValue = inputValue ? inputValue : "tiger";
 
       console.log("Key From Env is: ", process.env.REACT_APP_YOUTUBE_API_KEY);
       console.log("Key From Input is: ", api_key);
