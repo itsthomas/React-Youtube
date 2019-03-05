@@ -6,9 +6,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "express-favicon": "^2.0.1",
-    "local-storage": "^1.4.2",
     "node-sass": "^4.11.0",
-    "path": "^0.12.7",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "^2.1.5",
@@ -30,7 +28,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "express": "^4.16.4",
     "react-bootstrap-sweetalert": "^4.4.1"
   }
 }
